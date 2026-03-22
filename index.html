@@ -21,6 +21,33 @@ h2 { border-bottom:2px solid #4a90e2; padding-bottom:5px; margin-bottom:20px; }
 .skills { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
 .skill { background:#4a90e2; color:white; padding:5px 10px; border-radius:20px; font-size:0.9em; }
 footer { text-align:center; padding:20px; background:#333; color:white; margin-top:40px; }
+  skill-bar {
+  margin-bottom: 15px;
+}
+
+.skill-bar p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.bar {
+  width: 100%;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 10px;
+  background: #4a90e2;
+  width: 0;
+  animation: load 1.5s forwards;
+}
+
+@keyframes load {
+  from { width: 0; }
+}
+
 </style>
 </head>
 <body>
